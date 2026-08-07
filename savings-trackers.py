@@ -51,6 +51,16 @@ while total_savings < goal:
 
     week += 1
 
+print("\n" + "=" * 45)
+print("🎮 Congratulations!")
+print("You have saved enough money to buy your video game!")
+print("=" * 45)
+
+print("Goal Amount      : ₹", goal)
+print("Total Saved      : ₹", total_savings)
+print("Extra Savings    : ₹", total_savings - goal)
+print("Weeks Required   :", week - 1)
+
 print("\nWeekly Savings History")
 
 for i in range(len(history)):
