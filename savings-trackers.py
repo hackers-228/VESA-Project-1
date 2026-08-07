@@ -7,9 +7,14 @@ total_savings = 0
 week = 1
 
 while total_savings < goal:
+
     print("\nWeek", week)
 
     amount = float(input("Enter savings: ₹"))
+
+    if amount < 0:
+        print("Savings cannot be negative.")
+        continue
 
     total_savings += amount
 
