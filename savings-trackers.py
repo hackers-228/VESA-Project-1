@@ -1,3 +1,16 @@
+def motivation(percent):
+    if percent < 25:
+        print("🌱 Great start!")
+    elif percent < 50:
+        print("💪 Keep going!")
+    elif percent < 75:
+        print("🚀 More than halfway!")
+    elif percent < 100:
+        print("🔥 Almost there!")
+    else:
+        print("🎉 Goal achieved!")
+
+
 print("===================================")
 print("     STUDENT SAVINGS TRACKER")
 print("===================================")
@@ -11,8 +24,6 @@ else:
 
 total_savings = 0
 week = 1
-
-print("Savings Goal: ₹", goal)
 
 while total_savings < goal:
 
@@ -32,6 +43,9 @@ while total_savings < goal:
 
     if total_savings < goal:
         print("Remaining: ₹", remaining)
+
+    percent = (total_savings / goal) * 100
+    motivation(percent)
 
     week += 1
 
