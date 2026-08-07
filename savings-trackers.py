@@ -24,6 +24,7 @@ else:
 
 total_savings = 0
 week = 1
+history = []
 
 while total_savings < goal:
 
