@@ -37,6 +37,7 @@ while total_savings < goal:
         continue
 
     total_savings += amount
+    history.append(amount)
 
     remaining = goal - total_savings
 
@@ -50,4 +51,9 @@ while total_savings < goal:
 
     week += 1
 
-print("\nGoal Achieved!")
+print("\nWeekly Savings History")
+
+for i in range(len(history)):
+    print("Week", i + 1, ":", "₹", history[i])
+
+print("\nThank you for using Student Savings Tracker!")
